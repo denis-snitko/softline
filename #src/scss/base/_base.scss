@@ -1,1 +1,31 @@
-/* GENERAL */
+/* BASE */
+.container {
+    @include container();
+}
+
+.main-body {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    padding: 87px 0;
+    flex: 1 1 auto;
+
+    &__row {
+        @include row-flex();
+        justify-content: space-between;
+    }
+
+    &__search {
+        @include col();
+        @include size(8);
+    }
+    
+    &__news {
+        @include col();
+        @include size(4);
+    }
+}

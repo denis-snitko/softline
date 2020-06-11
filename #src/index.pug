@@ -4,8 +4,20 @@ block variables
 	- const title = "Softline"
 
 block content
-	include ./modules/header/_header.pug
-	main
+	.main-body
+		include ./modules/header/_header.pug
+
+		main.content 
+			.container
+				.content__row
+					.content__search
+						include ./modules/search/_search.pug
+					.content__news
+						include ./modules/news/_news.pug
+				.tabs-body
+					include ./modules/main-tabs/_main-tabs.pug
+		
+		include ./modules/footer/_footer.pug
 
 block scripts
 	script(src="./assets/js/vendors.js")

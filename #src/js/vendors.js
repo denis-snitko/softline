@@ -1,3 +1,1 @@
-// @@include('../../node_modules/jquery/dist/jquery.min.js');
-
-// console.log($('header').text());
+@@include('../../node_modules/jquery/dist/jquery.min.js');

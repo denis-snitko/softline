@@ -1,0 +1,108 @@
+.main-tabs {
+    &__title {
+        margin-bottom: 55px;
+        @include row-flex;
+    }
+
+    &__title-item {
+        @include col();
+        @include size(4);
+
+        padding: 17px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #ffffff;
+
+        background-color: #e0e0e0;
+        border-radius: 5px;
+
+        cursor: pointer;
+        transition: $base-transition;
+
+        &:hover {
+            background-color: #c61143;
+        }
+    }
+
+    &--active {
+        background-color: #c61143;
+    }
+
+    &__content-item {
+        display: none;
+    }
+}
+
+.section-menu {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 73px;
+
+    &__item {
+        flex: 1 1 auto;
+
+        padding: 0 22px;
+        padding-bottom: 8px;
+
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #bdbdbd;
+        text-decoration: none;
+        border-bottom: 1px solid #eaeaea;
+        transition: $base-transition;
+        cursor: pointer;
+
+        &:hover {
+            border-bottom: 1px solid #c61143;
+            color: #c61143;
+        }
+
+        &--active {
+            border-bottom: 1px solid #c61143;
+            color: #c61143;
+        }
+    }
+}
+
+.description {
+
+    &__wrapper {
+        position: relative;
+        padding: 58px 66px;
+        border: 1px solid #ebebeb;
+        border-radius: 5px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 6;
+            top: -14px;
+            left: calc(50% - 12.5px);
+            display: block;
+            width: 35px;
+            height: 35px;
+            background: url('../img/svg/two-arrow-down.svg') center no-repeat;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 5;
+            top: -15px;
+            left: calc(50% - 25px);
+            display: block;
+            width: 60px;
+            height: 35px;
+            background-color: #ffffff;
+        }
+    }
+}
+
+.active {
+    display: block;
+}

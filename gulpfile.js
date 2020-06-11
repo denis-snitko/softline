@@ -167,7 +167,7 @@ const options = {
         container: "container"
     },
     container: {
-        maxWidth: "1170px",
+        maxWidth: "1200px",
         fields: "15px" // side fields - 0.9375rem
     },
     breakPoints: {
