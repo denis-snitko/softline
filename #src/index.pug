@@ -1,0 +1,12 @@
+extends views/layouts/default
+
+block variables
+	- const title = "Softline"
+
+block content
+	include ./modules/header/_header.pug
+	main
+
+block scripts
+	script(src="./assets/js/vendors.js")
+	script(src="./assets/js/main.js")
