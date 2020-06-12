@@ -14,6 +14,10 @@
     padding: 87px 0;
     flex: 1 1 auto;
 
+    @include md-block() {
+        padding: 50px 0;
+    }
+
     &__row {
         @include row-flex();
         justify-content: space-between;
@@ -22,10 +26,28 @@
     &__search {
         @include col();
         @include size(8);
+        @include size-md(12);
     }
-    
+
     &__news {
         @include col();
         @include size(4);
+        @include md(display, none);
     }
+}
+
+.m--text-blue {
+    color: #055f7a;
+}
+
+.m--text-red {
+    color: #7a1733;
+}
+
+.m--text-green {
+    color: #007a0f;
+}
+
+.m--text-orange {
+    color: #fa5a2f;
 }

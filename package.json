@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "jquery": "^3.5.1",
+    "owl.carousel": "^2.3.4",
     "smart-grid": "^2.1.2"
   }
 }

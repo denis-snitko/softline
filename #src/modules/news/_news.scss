@@ -1,4 +1,5 @@
 .news {
+    margin-bottom: 87px;
     padding: 36px 30px;
     padding-bottom: 20px;
     border: 1px solid #ebebeb;
@@ -15,7 +16,7 @@
     }
 
     &__item {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
 
     &__date {
@@ -30,7 +31,6 @@
         display: block;
         margin-bottom: 7px;
         font-weight: bold;
-        line-height: 19px;
 
         color: #c61143;
         text-decoration: none;

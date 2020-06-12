@@ -33,6 +33,10 @@
     &__content-item {
         display: none;
     }
+
+    &__cards {
+        margin-bottom: 75px;
+    }
 }
 
 .section-menu {
@@ -70,10 +74,12 @@
 }
 
 .description {
-
     &__wrapper {
         position: relative;
         padding: 58px 66px;
+        text-align: center;
+        color: #4f4f4f;
+
         border: 1px solid #ebebeb;
         border-radius: 5px;
 
@@ -86,7 +92,7 @@
             display: block;
             width: 35px;
             height: 35px;
-            background: url('../img/svg/two-arrow-down.svg') center no-repeat;
+            background: url("../img/svg/two-arrow-down.svg") center no-repeat;
         }
 
         &::after {
@@ -101,8 +107,175 @@
             background-color: #ffffff;
         }
     }
+
+    &__title {
+        margin-bottom: 25px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+    }
+
+    p {
+        margin-bottom: 35px;
+        line-height: 21px;
+    }
+
+    &__vendors-title {
+        margin-bottom: 44px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    &__vendors-row {
+        @include row-flex();
+        align-items: center;
+    }
+
+    &__vendors-col {
+        @include col();
+        @include size(4);
+        @include size-sm(12);
+    }
+
+    img {
+        @include sm(margin-bottom, 35px);
+        max-width: 220px;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .active {
     display: block;
+}
+
+.main-card {
+    color: #4f4f4f;
+
+    @include md-block() {
+        max-width: 370px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        height: 70px;
+        padding: 18px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+
+        text-align: center;
+        background-color: #ebebeb;
+        border: 1px solid #ebebeb;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    &__item {
+        padding: 20px;
+        border: 1px solid #ebebeb;
+        border-top: 1px solid transparent;
+
+        &:last-child {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        transition: $base-transition;
+        cursor: pointer;
+    }
+
+    &--red {
+        .main-card__item {
+            &:hover {
+                background-color: rgba(#7a1733, 0.1);
+                border: 1px solid #7a1733;
+            }
+
+            &:hover .item__check {
+                background: url("../img/svg/check-red.svg") center no-repeat;
+                border: 2px solid #7a1733;
+            }
+        }
+    }
+
+    &--blue {
+        .main-card__item {
+            &:hover {
+                background-color: rgba(#055f7a, 0.1);
+                border: 1px solid #055f7a;
+            }
+
+            &:hover .item__check {
+                background: url("../img/svg/check-blue.svg") center no-repeat;
+                border: 2px solid #055f7a;
+            }
+        }
+    }
+
+    &--green {
+        .main-card__item {
+            &:hover {
+                background-color: rgba(#007a0f, 0.1);
+                border: 1px solid #007a0f;
+            }
+
+            &:hover .item__check {
+                background: url("../img/svg/check-green.svg") center no-repeat;
+                border: 2px solid #007a0f;
+            }
+        }
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        height: 100px;
+
+        &__check {
+            position: relative;
+            margin-right: 11px;
+            width: 51px;
+            height: 51px;
+
+            background-color: #fff;
+            border: 2px solid #b7b7b7;
+            border-radius: 50%;
+        }
+
+        &__body {
+            display: flex;
+            flex-direction: column;
+            width: 140px;
+            max-height: 55px;
+            height: 100%;
+        }
+
+        &__title {
+            flex: 1 1 auto;
+            font-weight: 700;
+        }
+
+        &__descr {
+        }
+    }
+}
+
+.main-card--orange {
+    .item__body {
+        padding-left: 40px;
+        width: 100%;
+        height: 100%;
+    }
+    .main-card__item {
+        &:hover {
+            background-color: rgba(#fa5a2f, 0.1);
+            border: 1px solid #fa5a2f;
+        }
+    }
 }

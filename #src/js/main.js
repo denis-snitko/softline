@@ -8,10 +8,12 @@ $(document).ready(function () {
 
     $searchInput.focusin(function () {
         $searchResult.show(150);
+        $('.search__form').height(380);
     });
 
     $searchInput.focusout(function () {
         $searchResult.hide(150);
+        $('.search__form').height(46);
     });
 
 
@@ -27,6 +29,26 @@ $(document).ready(function () {
         $('.main-tabs__content-item').removeClass('active');
         content.addClass('active');
     });
+
+
+    // Owl
+    $('.main-tabs__cards').owlCarousel({
+        loop: true,
+        margin: 30,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false
+            },
+
+            768: {
+                items: 3,
+                nav: true
+            }
+        }
+    })
+
 })
 
 

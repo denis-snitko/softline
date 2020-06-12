@@ -7,7 +7,7 @@
     ul.main-tabs__content
 
 
-        li.main-tabs__content-item.active(data-tab="1")
+        li.main-tabs__content-item(data-tab="1")
             ul.section-menu
                 a.section-menu__item.section-menu__item--active(href="#") Информационная безопасность
                 a.section-menu__item(href="#") ЮТ
@@ -20,21 +20,173 @@
                 a.section-menu__item(href="#") Бизнес решения
                 a.section-menu__item(href="#") Облачные реализации
 
+            .main-tabs__cards.owl-carousel.owl-theme
+                ul.main-card.main-card--red
+                    li.main-card__title Отрасли
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-red Ритейл
+                            .item__descr Виткова Снежана
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-red Ростех
+                            .item__descr Гумаров Игнат
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-red Финансы
+                            .item__descr Бровки Алексей
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-red Государственный сектор
+                            .item__descr Кудрявцев Юрий
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-red Промышленность
+                            .item__descr Перво Иван
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-red Энергетика
+                            .item__descr Хараск Максим
+                ul.main-card.main-card--blue
+                    li.main-card__title Решения
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-blue Сетевая защита
+                            .item__descr Виткова Снежана
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-blue Персональные данные
+                            .item__descr Гумаров Игнат
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-blue Контроль доступа
+                            .item__descr Бровки Алексей
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-blue SOC
+                            .item__descr Кудрявцев Юрий
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-blue DLP
+                            .item__descr Перво Иван
+                ul.main-card.main-card--green
+                    li.main-card__title Вендоры
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-green Forcepoint
+                            .item__descr Виткова Снежана
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-green Positive Tech
+                            .item__descr Гумаров Игнат
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-green Kaspersky
+                            .item__descr Бровки Алексей
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-green Alladin
+                            .item__descr Кудрявцев Юрий
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-green Usergate
+                            .item__descr Перво Иван
+                    li.main-card__item.item
+                        .item__check
+                        .item__body
+                            .item__title.m--text-green Eset
+                            .item__descr Хараск Максим
+
+
             .main-tabs__description.description
                 .description__wrapper
-                    .descriptin__title Описание решения Персональные данные в отрасли Ритейл
+                    .description__title Описание решения <span class="m--text-blue">Персональные данные</span> в отрасли <span  class="m--text-red">Ритейл</span>
                     p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-                    .descriptin__sub-title Решение представлено у вендоров
-                    .descriptin__vendors vendors
+                    .description__vendors
+                        .description__vendors-title Решение представлено у вендоров
+                        .description__vendors-row
+                            .description__vendors-col
+                                img(src="./assets/img/vendors/kaspersky.png" alt="")
+                            .description__vendors-col
+                                img(src="./assets/img/vendors/eset.png" alt="")
+                            .description__vendors-col
+                                img(src="./assets/img/vendors/usergate.png" alt="")
 
-
-        li.main-tabs__content-item(data-tab="2")
+        li.main-tabs__content-item.active(data-tab="2")
             ul.section-menu
                 a.section-menu__item.section-menu__item--active(href="#") Организационная структура продавцов
                 a.section-menu__item(href="#") Организационная структура сервисов
 
-            .main-tabs__description
-            | Выбранный элемент Отраслевая экспертиза
+            .main-tabs__cards.owl-carousel.owl-theme
+                ul.main-card.main-card--orange
+                    li.main-card__title Управление инфомационной безопасности
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-orange Петрик Михаил
+                            .item__descr Отраслевая экспертиза
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-orange Ковалев Дмитрий
+                            .item__descr Технологическая экспертиза
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-orange Малышев Михаил
+                            .item__descr Продуктовая экспертиза
+
+                ul.main-card.main-card--orange
+                    li.main-card__title Управление сервисов
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-orange Департамент инфраструктурных решений
+                            .item__descr Стрельников Алексей
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-orange Департамент бизнес-решений
+                            .item__descr Адрианов Максим
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-orange Департамент типисовых решений
+                            .item__descr Типисова Елена
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-orange Департамент САПР, ГИС и математических технологий 
+                            .item__descr Русин Дмитрий
+
+                ul.main-card.main-card--orange
+                    li.main-card__title Управление облачных технологий
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-orange Буковский Вадим
+                            .item__descr Отраслевая экспертиза (МСК)
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-orange Егорычев Владимир
+                            .item__descr Региональная экспертиза
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-orange Сапронов Дмитрий
+                            .item__descr Клиентская экспертиза
+
+
+            .main-tabs__description.description
+                .description__wrapper
+                    .description__title Выбранный элемент <span class="m--text-red">Отраслевая экспертиза</span>
 
 
         li.main-tabs__content-item(data-tab="3")
@@ -43,6 +195,9 @@
                 a.section-menu__item(href="#") Второй приоритет
                 a.section-menu__item(href="#") Третий приоритет
 
-            .main-tabs__description
-            | Решение Персональные данные от вендора Cisco
+            .main-tabs__description.description
+                .description__wrapper
+                    .description__title Решение <span class="m--text-blue">Персональные данные</span> от вендора <span  class="m--text-green">Cisco</span>
+                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+
 

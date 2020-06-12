@@ -1,7 +1,7 @@
 .search {
     &__title {
-        margin-top: 10px;
         margin-bottom: 20px;
+        @include md(display, none);
     }
 
     &__descr {
@@ -11,13 +11,18 @@
         line-height: 29px;
 
         color: #4f4f4f;
+        @include md(display, none);
     }
 
     &__form {
         position: relative;
         margin-right: 20px;
         width: 100%;
-        height: 450px;
+
+        @include md-block() {
+            margin-bottom: 50px;
+            margin-right: 0;
+        };
     }
 
     &__result {
@@ -27,7 +32,7 @@
         top: 45px;
 
         width: 100%;
-        height: 350px;
+        height: 310px;
 
         padding: 15px 25px 0 25px;
 
