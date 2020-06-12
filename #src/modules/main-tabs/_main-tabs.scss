@@ -7,6 +7,13 @@
     &__title-item {
         @include col();
         @include size(4);
+        @include size-sm(12);
+        @include sm-block() {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
 
         padding: 17px;
         font-weight: 600;
@@ -45,6 +52,8 @@
 
     margin-bottom: 73px;
 
+    // overflow-x: overlay;
+
     &__item {
         flex: 1 1 auto;
 
@@ -79,6 +88,8 @@
         padding: 58px 66px;
         text-align: center;
         color: #4f4f4f;
+        @include lg(padding-left, 0);
+        @include lg(padding-right, 0);
 
         border: 1px solid #ebebeb;
         border-radius: 5px;
@@ -105,6 +116,10 @@
             width: 60px;
             height: 35px;
             background-color: #ffffff;
+        }
+
+        p {
+            padding: 0 22px;
         }
     }
 
@@ -143,6 +158,122 @@
         max-width: 220px;
         width: 100%;
         height: auto;
+    }
+
+    &__persons {
+        padding-top: 20px;
+    }
+
+    .person-description {
+        text-align: center;
+        font-size: 18px;
+        line-height: 21px;
+
+        @include sm(text-align, start);
+        @include md-block() {
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        @include md-block() {
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        color: #4f4f4f;
+
+        &__main {
+            position: relative;
+            margin: 0 auto;
+            max-width: 75%;
+            padding: 15px;
+            padding-bottom: 42px;
+            border-bottom: 1px solid #ebebeb;
+
+            @include sm-block() {
+                width: auto;
+                margin: 0;
+                padding-left: 22px;
+                padding-bottom: 20px;
+                border: none;
+                &::after {
+                    display: none;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0px;
+                width: 1px;
+                height: 30px;
+                border: 1px solid #ebebeb;
+            }
+        }
+
+        &__second {
+            padding: 0 15px;
+            position: relative;
+
+            @include sm-block() {
+                width: 250px;
+                padding-bottom: 40px;
+
+                &:last-child {
+                    padding-bottom: 0;
+                }
+
+                &::before {
+                    top: 62px;
+                    left: -50px;
+                    width: 30px;
+                    height: 1px;
+                    border: 1px solid #ebebeb;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -47px;
+                width: 1px;
+                height: 30px;
+                border: 1px solid #ebebeb;
+            }
+        }
+
+        &__inner {
+            position: relative;
+            display: flex;
+            margin-top: 46px;
+
+            @include sm-block() {
+                flex-direction: column;
+                margin-left: 22px;
+                padding-left: 50px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -35px;
+                    left: 0;
+                    width: 1px;
+                    height: 100%;
+                    border: 1px solid #ebebeb;
+                }
+            }
+        }
+
+        &__title {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #7a1733;
+        }
+
+        &__name {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
     }
 }
 

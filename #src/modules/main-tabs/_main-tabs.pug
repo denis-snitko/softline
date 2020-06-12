@@ -5,9 +5,7 @@
         li.main-tabs__title-item(data-tab="3") Карта вендоров
 
     ul.main-tabs__content
-
-
-        li.main-tabs__content-item(data-tab="1")
+        li.main-tabs__content-item.active(data-tab="1")
             ul.section-menu
                 a.section-menu__item.section-menu__item--active(href="#") Информационная безопасность
                 a.section-menu__item(href="#") ЮТ
@@ -20,7 +18,7 @@
                 a.section-menu__item(href="#") Бизнес решения
                 a.section-menu__item(href="#") Облачные реализации
 
-            .main-tabs__cards.owl-carousel.owl-theme
+            .main-tabs__cards.owl-carousel.owl-carousel-main.owl-theme
                 ul.main-card.main-card--red
                     li.main-card__title Отрасли
                     li.main-card__item.item
@@ -128,12 +126,12 @@
                             .description__vendors-col
                                 img(src="./assets/img/vendors/usergate.png" alt="")
 
-        li.main-tabs__content-item.active(data-tab="2")
+        li.main-tabs__content-item(data-tab="2")
             ul.section-menu
                 a.section-menu__item.section-menu__item--active(href="#") Организационная структура продавцов
                 a.section-menu__item(href="#") Организационная структура сервисов
 
-            .main-tabs__cards.owl-carousel.owl-theme
+            .main-tabs__cards.owl-carousel.owl-carousel-main.owl-theme
                 ul.main-card.main-card--orange
                     li.main-card__title Управление инфомационной безопасности
                     li.main-card__item.item
@@ -182,18 +180,154 @@
                         .item__body
                             .item__title.m--text-orange Сапронов Дмитрий
                             .item__descr Клиентская экспертиза
-
-
             .main-tabs__description.description
                 .description__wrapper
                     .description__title Выбранный элемент <span class="m--text-red">Отраслевая экспертиза</span>
 
+                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+
+                    .description__persons.person-description
+                        .person-description__main
+                            .person-description__name Воловик Александр
+                            .person-description__prof Руководитель группы
+                        .person-description__inner
+                            .person-description__second
+                                .person-description__title Ритейл/FMCG
+                                .person-description__name Осипов Сергей
+                                .person-description__prof Менеджер по продаже решений
+                            .person-description__second
+                                .person-description__title Промышленность
+                                .person-description__name Полев Константин
+                                .person-description__prof Менеджер по продаже решений
+                            .person-description__second
+                                .person-description__title Промышленность
+                                .person-description__name Ломакина Екатерина
+                                .person-description__prof Менеджер по продаже решений
+                            .person-description__second
+                                .person-description__title Финансы/Телеком
+                                .person-description__name Воловик Александр
+                                .person-description__prof Менеджер по продаже решений
 
         li.main-tabs__content-item(data-tab="3")
             ul.section-menu
                 a.section-menu__item.section-menu__item--active(href="") ТОП-12
                 a.section-menu__item(href="#") Второй приоритет
                 a.section-menu__item(href="#") Третий приоритет
+
+            .main-tabs__cards.owl-carousel.owl-carousel--vendors.owl-theme
+                ul.main-card.main-card--blue
+                    li.main-card__title Управление инфомационной безопасности
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Сетевая защита
+                            .item__descr Чигин Денис
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Персональные данные
+                            .item__descr Катчиев Ринат
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Контроль доступа
+                            .item__descr Давыдов Александр
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Персональные данные
+                            .item__descr Катчиев Ринат
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Контроль доступа
+                            .item__descr Давыдов Александр
+
+                ul.main-card.main-card--blue
+                    li.main-card__title Управление инфомационной безопасности
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Сетевая защита
+                            .item__descr Чигин Денис
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Персональные данные
+                            .item__descr Катчиев Ринат
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Контроль доступа
+                            .item__descr Давыдов Александр
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Персональные данные
+                            .item__descr Катчиев Ринат
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Контроль доступа
+                            .item__descr Давыдов Александр
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Контроль доступа
+                            .item__descr Давыдов Александр
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Персональные данные
+                            .item__descr Катчиев Ринат
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Контроль доступа
+                            .item__descr Давыдов Александр
+
+                ul.main-card.main-card--blue
+                    li.main-card__title Управление инфомационной безопасности
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Сетевая защита
+                            .item__descr Чигин Денис
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Персональные данные
+                            .item__descr Катчиев Ринат
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Контроль доступа
+                            .item__descr Давыдов Александр
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Персональные данные
+                            .item__descr Катчиев Ринат
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Контроль доступа
+                            .item__descr Давыдов Александр
+
+                ul.main-card.main-card--blue
+                    li.main-card__title Управление инфомационной безопасности
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Сетевая защита
+                            .item__descr Чигин Денис
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Персональные данные
+                            .item__descr Катчиев Ринат
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Контроль доступа
+                            .item__descr Давыдов Александр
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Персональные данные
+                            .item__descr Катчиев Ринат
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Контроль доступа
+                            .item__descr Давыдов Александр
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Контроль доступа
+                            .item__descr Давыдов Александр
+                    li.main-card__item.item
+                        .item__body
+                            .item__title.m--text-blue Персональные данные
+                            .item__descr Катчиев Ринат
+                    
+
 
             .main-tabs__description.description
                 .description__wrapper

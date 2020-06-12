@@ -2,7 +2,6 @@ $(document).ready(function () {
 
 
     // Search show
-
     let $searchInput = $('.form__input');
     let $searchResult = $('.search__result');
 
@@ -18,7 +17,6 @@ $(document).ready(function () {
 
 
     // Main tabs
-
     $('.main-tabs__title-item').click(function () {
         let id = $(this).attr('data-tab'),
             content = $('.main-tabs__content-item[data-tab="' + id + '"]');
@@ -32,14 +30,15 @@ $(document).ready(function () {
 
 
     // Owl
-    $('.main-tabs__cards').owlCarousel({
+    $('.owl-carousel-main').owlCarousel({
         loop: true,
         margin: 30,
         responsiveClass: true,
         responsive: {
             0: {
                 items: 1,
-                nav: false
+                nav: true,
+                dots: false
             },
 
             768: {
@@ -49,7 +48,28 @@ $(document).ready(function () {
         }
     })
 
+    // Owl-vendors
+    $('.owl-carousel--vendors').owlCarousel({
+        loop: true,
+        margin: 30,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: true,
+                dots: false
+            },
+
+            768: {
+                items: 4,
+                // nav: true
+            }
+        }
+    })
+
 })
+
+
 
 
 
