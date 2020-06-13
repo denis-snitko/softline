@@ -25,13 +25,13 @@
 
     &__search {
         @include col();
-        @include size(8);
+        @include size(9);
         @include size-md(12);
     }
 
     &__news {
         @include col();
-        @include size(4);
+        @include size(3);
         @include md(display, none);
     }
 }

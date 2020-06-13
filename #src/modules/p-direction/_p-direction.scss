@@ -1,0 +1,36 @@
+.p-direction {
+    &__bread-crumbs {
+        margin: 40px 0px;
+    }
+
+    &__descr {
+        padding: 24px 0px 31px 0px;
+        border-top: 1px solid #e8e8e8;
+
+        span {
+            font-weight: 600;
+            line-height: 19px;
+
+            color: #525252;
+        }
+
+        a {
+            margin-left: 8px;
+            color: #fa5a2f;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        p {
+            max-width: 670px;
+            margin: 15px 15px 30px 0px;
+
+            color: #333333;
+        }
+    }
+    .main-card .item__body {
+        width: 100%;
+    }
+}
