@@ -101,6 +101,36 @@
     color: #4f4f4f;
 }
 
+.block-link {
+    padding: 20px 50px 0 50px;
+    @include row-flex();
+    
+    &__col {
+        @include col();
+        @include size(6);
+        @include size-sm(12);
+    }
+
+    a {
+        display: inline-block;
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 21px;
+
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    p {
+        margin-bottom: 20px;
+        line-height: 21px;
+        color: #333333;
+    }
+}
+
 .m--text-blue {
     color: #055f7a;
 }
