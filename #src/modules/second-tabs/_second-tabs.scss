@@ -1,0 +1,33 @@
+.second-tabs {
+    .main-tabs {
+        margin-bottom: 45px;
+        
+        &__title {
+            margin-bottom: 0;
+        }
+
+        &__title-item {
+            @include size(3);
+            @include size-sm(12);
+            @include sm-block() {
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            border-radius: 5px 5px 0 0;
+        }
+
+        &__content {
+            padding: 26px 26px 46px 26px;
+
+            border-radius: 0 0 5px 5px;
+            border: 1px solid #ebebeb;
+        }
+    }
+    
+    p {
+
+    }
+}

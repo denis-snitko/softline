@@ -44,6 +44,37 @@
     &__cards {
         margin-bottom: 75px;
     }
+
+    &__vendors {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        @include sm(justify-content, space-around);
+
+        img {
+            height: 22px;
+            margin-bottom: 20px;
+            @include md(height, 14px);
+
+            margin-right: 12px;
+            @include sm(margin-right, 8px);
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &--big {
+            height: 32px !important;
+            @include md(height, 20px !important);
+        }
+
+        &--grayscale {
+            filter: grayscale(1);
+        }
+    }
 }
 
 .section-menu {
@@ -305,6 +336,10 @@
         border: 1px solid #ebebeb;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
+
+        img {
+            width: initial !important;
+        }
     }
 
     &__item {
@@ -390,9 +425,6 @@
         &__title {
             flex: 1 1 auto;
             font-weight: 700;
-        }
-
-        &__descr {
         }
     }
 }

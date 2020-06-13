@@ -10,13 +10,15 @@ block content
 		main.content 
 			.container
 				.content__row
-					.content__search
+					section.content__search
+						h1.search__title Поиск по Карте решений
+						p.search__descr Начните вводить поисковую фразу, выберите нужный результат в выпадающем меню и нажмите Enter
 						include ./modules/search/_search.pug
 					.content__news
 						include ./modules/news/_news.pug
 				.tabs-body
 					include ./modules/main-tabs/_main-tabs.pug
-		
+
 		include ./modules/footer/_footer.pug
 
 block scripts

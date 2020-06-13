@@ -1,0 +1,29 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Страница вендора Miсrosoft"
+
+block content
+	.main-body
+		include ../../modules/header/_header.pug
+
+		main.content 
+			.container
+				.content__row
+					section.content__search
+						include ../../modules/search/_search.pug
+						section.content__vendor
+							include ../../modules/p-vendor/_p-vendor.pug
+					section.content__news
+						include ../../modules/news/_news.pug
+				.content__full
+					include ../../modules/second-tabs/_second-tabs.pug
+		
+		include ../../modules/footer/_footer.pug
+
+block scripts
+	script(src="./assets/js/vendors.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
+
+
+	script(src="./assets/js/main.js")

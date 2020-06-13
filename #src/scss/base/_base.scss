@@ -36,6 +36,71 @@
     }
 }
 
+// Bread-crumbs
+.bread-crumbs {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    &__item {
+        position: relative;
+        margin-right: 18px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 7px;
+            right: -12px;
+            display: inline-block;
+            width: 5px;
+            height: 9px;
+
+            background: url("../img/svg/arrow-right-bread.svg");
+            background-repeat: no-repeat;
+        }
+
+        &:last-child {
+            color: #c61143;
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+    }
+
+    &__link {
+        font-size: 12px;
+        line-height: 24px;
+
+        color: #b7b7b7;
+
+        &:hover {
+            color: #c61143;
+            transition: $base-transition;
+        }
+    }
+}
+
+.page-main-title {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #525252;
+}
+
+.page-main-descr {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #4f4f4f;
+}
+
 .m--text-blue {
     color: #055f7a;
 }
