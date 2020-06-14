@@ -79,11 +79,16 @@
 
 .section-menu {
     display: flex;
-    justify-content: space-around;
 
     margin-bottom: 73px;
 
-    // overflow-x: overlay;
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+  
 
     &__item {
         flex: 1 1 auto;
