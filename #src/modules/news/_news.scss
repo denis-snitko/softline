@@ -5,6 +5,24 @@
     border: 1px solid #ebebeb;
     border-radius: 2px;
 
+    @include md-block() {
+
+        margin-top: 50px;
+        margin-bottom: 0;
+
+        &__body {
+            @include row-flex();
+        }
+
+        &__item {
+            @include col();
+            @include size(4);
+            @include size-sm(12);
+        }
+    }
+
+    
+
     &__title {
         margin-bottom: 30px;
         font-weight: bold;

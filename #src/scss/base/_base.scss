@@ -4,15 +4,15 @@
 }
 
 .main-body {
-    min-height: 100%;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
 }
 
 .content {
-    padding: 87px 0;
     flex: 1 1 auto;
+    padding: 87px 0;
 
     @include md-block() {
         padding: 50px 0;
@@ -20,6 +20,7 @@
 
     &__row {
         @include row-flex();
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
@@ -32,7 +33,13 @@
     &__news {
         @include col();
         @include size(3);
-        @include md(display, none);
+        @include size-md(12);
+        @include md(order, 1);
+    }
+
+    &__body {
+        @include col();
+        @include size(12);
     }
 }
 
