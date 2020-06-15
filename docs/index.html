@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <!-- Styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Softline</title>
+  </head>
+  <body>
+    <div class="main-body">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div class="logo"><img src="./assets/img/logo.png" alt=""></div>
+            <div class="header__avatar-body avatar-header"><img class="avatar-header__img" src="./assets/img/header-avatar.png" alt=""><a class="avatar-header__name" href="#">Константин Константинов</a>
+              <button class="avatar-header__icon avatar-header__icon--logout"></button>
+              <button class="avatar-header__icon avatar-header__icon--help"></button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="content"> 
+        <div class="container">
+          <div class="content__row">
+            <section class="content__search">
+              <h1 class="search__title">Поиск по Карте решений</h1>
+              <p class="search__descr">Начните вводить поисковую фразу, выберите нужный результат в выпадающем меню и нажмите Enter</p>
+              <div class="search">
+                <form class="search__form form" action="#">
+                  <input class="form__input" type="text" name="search" placeholder="Введите фразу">
+                  <button class="form__button" type="submit"></button>
+                  <div class="search__result">
+                    <div class="result">
+                      <div class="result__title">Продукты:</div>
+                      <ul class="result__list">
+                        <li class="result__item"><a href="">Windows Server 2010, <span>продажа лицензий</span></a></li>
+                        <li class="result__item"><a href="">Windows 10, <span>продажа лицензий</span></a></li>
+                        <li class="result__item"><a href="">Windows Azure, <span>продажа лицензий</span></a></li>
+                      </ul>
+                      <div class="result__title">Направления:</div>
+                      <ul class="result__list">
+                        <li class="result__item"><a href="">Обучение Windows Server 10, <span>направление учебного центра</span></a></li>
+                        <li class="result__item"><a href="">Обучение Windows 10, <span>направление учебного центра</span></a></li>
+                        <li class="result__item"><a href="">Обучение Windows Azure, <span>направление учебного центра</span></a></li>
+                      </ul>
+                      <div class="result__title">Сотрудники:</div>
+                      <ul class="result__list">
+                        <li class="result__item"><a href="">Олег Родионов, <span>инженер отдел внедрения Windows</span></a></li>
+                        <li class="result__item"><a href="">Александр Дмитриев, <span>менеджер, группа продаж Windows</span></a></li>
+                        <li class="result__item"><a href="">Windows Azure, <span>продажа лицензий</span></a></li>
+                      </ul>
+                      <div class="result__title">Документы:</div>
+                      <ul class="result__list">
+                        <li class="result__item"><a href="">Windows Server 2010, <span>продажа лицензий</span></a></li>
+                        <li class="result__item"><a href="">Windows 10, <span>продажа лицензий</span></a></li>
+                        <li class="result__item"><a href="">Windows Azure, <span>продажа лицензий</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </section>
+            <div class="content__news">
+              <div class="news">
+                <div class="news__title">Новости Softline</div>
+                <div class="news__body">
+                  <div class="news__item">
+                    <div class="news__date">31.05.2020</div><a class="news__small-title" href="">Aenean vulputate eleifend tellus ullamcorper ultricies nisi</a>
+                    <div class="news__descr">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus...</div>
+                  </div>
+                  <div class="news__item">
+                    <div class="news__date">31.05.2020</div><a class="news__small-title" href="">Aenean vulputate eleifend tellus ullamcorper ultricies nisi</a>
+                    <div class="news__descr">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus...</div>
+                  </div>
+                  <div class="news__item">
+                    <div class="news__date">31.05.2020</div><a class="news__small-title" href="">Aenean vulputate eleifend tellus ullamcorper ultricies nisi</a>
+                    <div class="news__descr">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus...</div>
+                  </div>
+                </div>
+                <div class="news__more"><a href="">Другие новости</a></div>
+              </div>
+            </div>
+            <div class="content__body tabs-body">
+              <div class="main-tabs">
+                <ul class="main-tabs__title">
+                  <li class="main-tabs__title-item main-tabs--active" data-tab="1">Карта решений</li>
+                  <li class="main-tabs__title-item" data-tab="2">Карта ответственных</li>
+                  <li class="main-tabs__title-item" data-tab="3">Карта вендоров</li>
+                </ul>
+                <ul class="main-tabs__content">
+                  <li class="main-tabs__content-item active" data-tab="1">
+                    <div class="section-menu"><a class="section-menu__item section-menu__item--active" href="#">Информационная безопасность</a><a class="section-menu__item" href="#">ЮТ</a><a class="section-menu__item" href="#">Инфраструктура</a><a class="section-menu__item" href="#">Облачные реализации</a><a class="section-menu__item" href="#">Бизнес решения</a><a class="section-menu__item" href="#">Инфраструктура</a><a class="section-menu__item" href="#">ЮТ</a><a class="section-menu__item" href="#">Облачные реализации</a><a class="section-menu__item" href="#">Бизнес решения</a><a class="section-menu__item" href="#">Облачные реализации</a></div>
+                    <div class="main-tabs__cards owl-carousel owl-carousel-main owl-theme">
+                      <ul class="main-card main-card--red">
+                        <li class="main-card__title">Отрасли</li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-red">Ритейл</div>
+                            <div class="item__descr">Виткова Снежана</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-red">Ростех</div>
+                            <div class="item__descr">Гумаров Игнат</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-red">Финансы</div>
+                            <div class="item__descr">Бровки Алексей</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-red">Государственный сектор</div>
+                            <div class="item__descr">Кудрявцев Юрий</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-red">Промышленность</div>
+                            <div class="item__descr">Перво Иван</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-red">Энергетика</div>
+                            <div class="item__descr">Хараск Максим</div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="main-card main-card--blue">
+                        <li class="main-card__title">Решения</li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Сетевая защита</div>
+                            <div class="item__descr">Виткова Снежана</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Персональные данные</div>
+                            <div class="item__descr">Гумаров Игнат</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Контроль доступа</div>
+                            <div class="item__descr">Бровки Алексей</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">SOC</div>
+                            <div class="item__descr">Кудрявцев Юрий</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">DLP</div>
+                            <div class="item__descr">Перво Иван</div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="main-card main-card--green">
+                        <li class="main-card__title">Вендоры</li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-green">Forcepoint</div>
+                            <div class="item__descr">Виткова Снежана</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-green">Positive Tech</div>
+                            <div class="item__descr">Гумаров Игнат</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-green">Kaspersky</div>
+                            <div class="item__descr">Бровки Алексей</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-green">Alladin</div>
+                            <div class="item__descr">Кудрявцев Юрий</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-green">Usergate</div>
+                            <div class="item__descr">Перво Иван</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__check"></div>
+                          <div class="item__body">
+                            <div class="item__title m--text-green">Eset</div>
+                            <div class="item__descr">Хараск Максим</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="main-tabs__description description">
+                      <div class="description__wrapper">
+                        <div class="description__title">Описание решения <span class="m--text-blue">Персональные данные</span> в отрасли <span  class="m--text-red">Ритейл</span></div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                        <div class="description__vendors">
+                          <div class="description__vendors-title">Решение представлено у вендоров</div>
+                          <div class="description__vendors-row">
+                            <div class="description__vendors-col"><img src="./assets/img/vendors/kaspersky.png" alt=""></div>
+                            <div class="description__vendors-col"><img src="./assets/img/vendors/eset.png" alt=""></div>
+                            <div class="description__vendors-col"><img src="./assets/img/vendors/usergate.png" alt=""></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="main-tabs__content-item" data-tab="2">
+                    <div class="section-menu"><a class="section-menu__item section-menu__item--active" href="#">Организационная структура продавцов</a><a class="section-menu__item" href="#">Организационная структура сервисов</a></div>
+                    <div class="main-tabs__cards owl-carousel owl-carousel-main owl-theme">
+                      <ul class="main-card main-card--orange">
+                        <li class="main-card__title">Управление инфомационной безопасности</li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-orange">Петрик Михаил</div>
+                            <div class="item__descr">Отраслевая экспертиза</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-orange">Ковалев Дмитрий</div>
+                            <div class="item__descr">Технологическая экспертиза</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-orange">Малышев Михаил</div>
+                            <div class="item__descr">Продуктовая экспертиза</div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="main-card main-card--orange">
+                        <li class="main-card__title">Управление сервисов</li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-orange">Департамент инфраструктурных решений</div>
+                            <div class="item__descr">Стрельников Алексей</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-orange">Департамент бизнес-решений</div>
+                            <div class="item__descr">Адрианов Максим</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-orange">Департамент типисовых решений</div>
+                            <div class="item__descr">Типисова Елена</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-orange">Департамент САПР, ГИС и математических технологий </div>
+                            <div class="item__descr">Русин Дмитрий</div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="main-card main-card--orange">
+                        <li class="main-card__title">Управление облачных технологий</li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-orange">Буковский Вадим</div>
+                            <div class="item__descr">Отраслевая экспертиза (МСК)</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-orange">Егорычев Владимир</div>
+                            <div class="item__descr">Региональная экспертиза</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-orange">Сапронов Дмитрий</div>
+                            <div class="item__descr">Клиентская экспертиза</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="main-tabs__description description">
+                      <div class="description__wrapper">
+                        <div class="description__title">Выбранный элемент <span class="m--text-red">Отраслевая экспертиза</span></div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                        <div class="description__persons person-description">
+                          <div class="person-description__main">
+                            <div class="person-description__name">Воловик Александр</div>
+                            <div class="person-description__prof">Руководитель группы</div>
+                          </div>
+                          <div class="person-description__inner">
+                            <div class="person-description__second">
+                              <div class="person-description__title">Ритейл/FMCG</div>
+                              <div class="person-description__name">Осипов Сергей</div>
+                              <div class="person-description__prof">Менеджер по продаже решений</div>
+                            </div>
+                            <div class="person-description__second">
+                              <div class="person-description__title">Промышленность</div>
+                              <div class="person-description__name">Полев Константин</div>
+                              <div class="person-description__prof">Менеджер по продаже решений</div>
+                            </div>
+                            <div class="person-description__second">
+                              <div class="person-description__title">Промышленность</div>
+                              <div class="person-description__name">Ломакина Екатерина</div>
+                              <div class="person-description__prof">Менеджер по продаже решений</div>
+                            </div>
+                            <div class="person-description__second">
+                              <div class="person-description__title">Финансы/Телеком</div>
+                              <div class="person-description__name">Воловик Александр</div>
+                              <div class="person-description__prof">Менеджер по продаже решений</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="main-tabs__content-item" data-tab="3">
+                    <div class="section-menu"><a class="section-menu__item section-menu__item--active" href="">ТОП-12</a><a class="section-menu__item" href="#">Второй приоритет</a><a class="section-menu__item" href="#">Третий приоритет</a></div>
+                    <div class="main-tabs__vendors"><img class="main-tabs__vendors--big" src="./assets/img/vendors/microsoft.png" alt=""><img class="main-tabs__vendors--big" src="./assets/img/vendors/cisco.png" alt=""><img class="main-tabs__vendors--big" src="./assets/img/vendors/kaspersky.png" alt=""><img class="main-tabs__vendors--big" src="./assets/img/vendors/ibm.png" alt=""><img class="main-tabs__vendors--grayscale" src="./assets/img/vendors/acer.png" alt=""><img class="main-tabs__vendors--grayscale" src="./assets/img/vendors/samsung.png" alt=""><img class="main-tabs__vendors--grayscale" src="./assets/img/vendors/google.png" alt=""><img class="main-tabs__vendors--grayscale" src="./assets/img/vendors/amazon.png" alt=""><img class="main-tabs__vendors--grayscale" src="./assets/img/vendors/microsoft.png" alt=""><img class="main-tabs__vendors--grayscale" src="./assets/img/vendors/cisco.png" alt=""><img class="main-tabs__vendors--grayscale" src="./assets/img/vendors/kaspersky.png" alt=""><img class="main-tabs__vendors--grayscale" src="./assets/img/vendors/ibm.png" alt=""></div>
+                    <div class="main-tabs__cards owl-carousel owl-carousel--vendors owl-theme">
+                      <ul class="main-card main-card--blue main-card--second-blue">
+                        <li class="main-card__title"><img src="./assets/img/vendors/microsoft.png" alt=""></li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Сетевая защита</div>
+                            <div class="item__descr">Чигин Денис</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Персональные данные</div>
+                            <div class="item__descr">Катчиев Ринат</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Контроль доступа</div>
+                            <div class="item__descr">Давыдов Александр</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Персональные данные</div>
+                            <div class="item__descr">Катчиев Ринат</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Контроль доступа</div>
+                            <div class="item__descr">Давыдов Александр</div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="main-card main-card--blue main-card--second-blue">
+                        <li class="main-card__title"><img src="./assets/img/vendors/cisco.png" alt=""></li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Сетевая защита</div>
+                            <div class="item__descr">Чигин Денис</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Персональные данные</div>
+                            <div class="item__descr">Катчиев Ринат</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Контроль доступа</div>
+                            <div class="item__descr">Давыдов Александр</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Персональные данные</div>
+                            <div class="item__descr">Катчиев Ринат</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Контроль доступа</div>
+                            <div class="item__descr">Давыдов Александр</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Контроль доступа</div>
+                            <div class="item__descr">Давыдов Александр</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Персональные данные</div>
+                            <div class="item__descr">Катчиев Ринат</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Контроль доступа</div>
+                            <div class="item__descr">Давыдов Александр</div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="main-card main-card--blue main-card--second-blue">
+                        <li class="main-card__title"><img src="./assets/img/vendors/kaspersky-small.png" alt=""></li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Сетевая защита</div>
+                            <div class="item__descr">Чигин Денис</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Персональные данные</div>
+                            <div class="item__descr">Катчиев Ринат</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Контроль доступа</div>
+                            <div class="item__descr">Давыдов Александр</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Персональные данные</div>
+                            <div class="item__descr">Катчиев Ринат</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Контроль доступа</div>
+                            <div class="item__descr">Давыдов Александр</div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="main-card main-card--blue main-card--second-blue">
+                        <li class="main-card__title"><img src="./assets/img/vendors/ibm.png" alt=""></li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Сетевая защита</div>
+                            <div class="item__descr">Чигин Денис</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Персональные данные</div>
+                            <div class="item__descr">Катчиев Ринат</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Контроль доступа</div>
+                            <div class="item__descr">Давыдов Александр</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Персональные данные</div>
+                            <div class="item__descr">Катчиев Ринат</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Контроль доступа</div>
+                            <div class="item__descr">Давыдов Александр</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Контроль доступа</div>
+                            <div class="item__descr">Давыдов Александр</div>
+                          </div>
+                        </li>
+                        <li class="main-card__item item">
+                          <div class="item__body">
+                            <div class="item__title m--text-blue">Персональные данные</div>
+                            <div class="item__descr">Катчиев Ринат</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="main-tabs__description description">
+                      <div class="description__wrapper">
+                        <div class="description__title">Решение <span class="m--text-blue">Персональные данные</span> от вендора <span  class="m--text-green">Cisco</span></div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__body">
+            <p>&copy; 1993-2020 Softline</p>
+            <p>115114, г. Москва, Дербеневская набережная, д. 7, стр. 8</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
