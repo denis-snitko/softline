@@ -1,0 +1,77 @@
+.p-person
+    .p-person__bread-crumbs.bread-crumbs
+        ul.bread-crumbs__list
+            li.bread-crumbs__item
+                a.bread-crumbs__link(href='') Главная
+            li.bread-crumbs__item
+                a.bread-crumbs__link(href='') Ответственные
+            li.bread-crumbs__item Василий Иванов
+
+    h1.p-person__title.page-main-title Василий Иванов
+    p.p-person__info.page-main-descr Здесь представлена информация о сотруднике и его ответственности
+
+    .p-person__row
+        .p-person__aside
+            .p-person__aside-title Информация о сотруднике
+            .p-person__aside-body
+                img(src="./assets/img/person-1.png" alt="")
+            .p-person__aside-text
+                p ФИО: <span>Василий Иванов</span>
+            .p-person__aside-text
+                p Должность: <span>Департамент САПР, ГИС и математических технологий</span> 
+            .p-person__aside-text
+                p E-mail: <a href="#">vasily_ivanoff@softline.com</a> 
+            .p-person__aside-text
+                p Рабочий: <a href="#">+7 (495) 345-56-78</a> 
+            .p-person__aside-text
+                p Мобильный: <a href="#">+7 (495) 345-56-78</a> 
+            .p-person__aside-text
+                p Офис: <span>Москва, центральный</span>
+            .p-person__aside-descr
+                h4 Руководитель:
+                .aside-descr__name Сергей Петров
+                p Заместитель главы отделения взаимодействий с Microsoft
+            .p-person__aside-descr
+                h4 Подчиненные:
+                .aside-descr__name Сергей Петров
+                p Заместитель главы отделения взаимодействий с Microsoft
+                .aside-descr__name Сергей Петров
+                p Заместитель главы отделения взаимодействий с Microsoft
+
+
+        .p-person__body
+            h3 Василий Иванов является ответственным за:
+            .p-person__person-content.person-content
+                .person-content__header
+                    ul.person-content__list
+                        li.person-content__item Направления:
+                        li.person-content__item Отрасли:
+                        li.person-content__item Решения:
+                        li.person-content__item Вендоры:
+                .person-content__inner
+                    .person-content__row
+                        ul.person-content__list
+                            li.person-content__item.m--text-orange
+                                img(src="./assets/img/svg/icon-1.svg" alt="")
+                                |Информационная безопасность
+                            li.person-content__item.m--text-red Финансы
+                            li.person-content__item.m--text-blue Персональные данные
+                            li.person-content__item.m--text-green Microsoft
+
+                    .person-content__row
+                        ul.person-content__list
+                            li.person-content__item.m--text-orange
+                                img(src="./assets/img/svg/icon-2.svg" alt="")
+                                |Облачные технологии
+                            li.person-content__item.m--text-red Госсектор
+                            li.person-content__item.m--text-blue Контроль доступа
+                            li.person-content__item.m--text-green Kaspersky
+
+                .person-content__footer
+                    p Пояснение:
+                    div
+                        img(src="./assets/img/svg/icon-1.svg", alt="")
+                        |- основная функциональная роль
+                    div
+                        img(src="./assets/img/svg/icon-2.svg", alt="")
+                        |- дополнительная функциональная роль
