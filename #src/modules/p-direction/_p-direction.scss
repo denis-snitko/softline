@@ -36,4 +36,38 @@
     .main-card .item__body {
         width: 100%;
     }
+
+    .owl-nav {
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 50%;
+            width: 32px;
+            height: 25px;
+            background: url('../img/svg/slider-arrow.svg') center no-repeat !important;
+
+            span {
+                font-size: 0;
+            }
+
+            @include md-block() {
+                top: -50px;
+            }
+        }
+
+        .owl-prev {
+            left: 60px;
+            @include md-block() {
+                left: -10px;
+            }
+        }
+
+        .owl-next {
+            right: 60px;
+            transform: rotate(180deg);
+            @include md-block() {
+                right: -10px;
+            }
+        }
+    }
 }

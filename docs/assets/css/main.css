@@ -590,6 +590,10 @@ P {
   cursor: pointer;
 }
 
+.main-tabs {
+  position: relative;
+}
+
 .main-tabs__title {
   margin-bottom: 55px;
   display: -webkit-box;
@@ -670,6 +674,31 @@ P {
 .main-tabs__vendors--grayscale {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
+}
+
+.main-tabs .owl-nav .owl-prev,
+.main-tabs .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  width: 32px;
+  height: 25px;
+  background: url("../img/svg/slider-arrow.svg") center no-repeat !important;
+}
+
+.main-tabs .owl-nav .owl-prev span,
+.main-tabs .owl-nav .owl-next span {
+  font-size: 0;
+}
+
+.main-tabs .owl-nav .owl-prev {
+  left: 60px;
+}
+
+.main-tabs .owl-nav .owl-next {
+  right: 60px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .section-menu {
@@ -1185,6 +1214,31 @@ P {
 
 .p-direction .main-card .item__body {
   width: 100%;
+}
+
+.p-direction .owl-nav .owl-prev,
+.p-direction .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  width: 32px;
+  height: 25px;
+  background: url("../img/svg/slider-arrow.svg") center no-repeat !important;
+}
+
+.p-direction .owl-nav .owl-prev span,
+.p-direction .owl-nav .owl-next span {
+  font-size: 0;
+}
+
+.p-direction .owl-nav .owl-prev {
+  left: 60px;
+}
+
+.p-direction .owl-nav .owl-next {
+  right: 60px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .p-vendor__bread-crumbs {
@@ -1795,6 +1849,19 @@ P {
     height: 20px !important;
   }
 
+  .main-tabs .owl-nav .owl-prev,
+  .main-tabs .owl-nav .owl-next {
+    top: -50px;
+  }
+
+  .main-tabs .owl-nav .owl-prev {
+    left: -10px;
+  }
+
+  .main-tabs .owl-nav .owl-next {
+    right: -10px;
+  }
+
   .description .person-description {
     font-size: 14px;
     line-height: 14px;
@@ -1811,7 +1878,6 @@ P {
   }
 
   .news {
-    margin-top: 50px;
     margin-bottom: 0;
   }
 
@@ -1848,6 +1914,19 @@ P {
 
   .footer__body p {
     margin-bottom: 15px;
+  }
+
+  .p-direction .owl-nav .owl-prev,
+  .p-direction .owl-nav .owl-next {
+    top: -50px;
+  }
+
+  .p-direction .owl-nav .owl-prev {
+    left: -10px;
+  }
+
+  .p-direction .owl-nav .owl-next {
+    right: -10px;
   }
 
   .p-result__aside,
