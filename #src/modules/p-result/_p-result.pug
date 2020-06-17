@@ -1,0 +1,115 @@
+.p-result
+    .p-result__bread-crumbs.bread-crumbs
+        ul.bread-crumbs__list
+            li.bread-crumbs__item
+                a.bread-crumbs__link(href='') Главная
+            li.bread-crumbs__item
+                a.bread-crumbs__link(href='') Поиск
+            li.bread-crumbs__item Результаты поиска
+
+    .p-result__row
+        .p-result__aside
+            .p-result__aside-title Фильтр
+            form.filter(action="#")
+                .filter__item-wrapper
+                    .filter__item
+                        .filter__item-title Вендоры
+                        .filter__item-inner
+                            input#vendor-1(type="checkbox" name="vendor")
+                            label(for="vendor-1") Miсrosoft
+                        .filter__item-inner
+                            input#vendor-2(type="checkbox" name="vendor")
+                            label(for="vendor-2") Softline
+                    
+                    .filter__item
+                        .filter__item-title Направления
+                        .filter__item-inner
+                            input#direction-1(type="checkbox" name="direction")
+                            label(for="direction-1") Внедрение
+                        .filter__item-inner
+                            input#direction-2(type="checkbox" name="direction")
+                            label(for="direction-2") Госсектор
+                        .filter__item-inner
+                            input#direction-3(type="checkbox" name="direction")
+                            label(for="direction-3") Продажи
+                        .filter__item-inner
+                            input#direction-4(type="checkbox" name="direction")
+                            label(for="direction-4") Обучение
+                        a.filter__item-link(href="#") Смотреть все
+                    
+                    .filter__item.filter__item--red
+                        .filter__item-title Отрасли
+                        .filter__item-inner
+                            input#industry-1(type="checkbox" name="industry")
+                            label(for="industry-1") Телеком
+                        .filter__item-inner
+                            input#industry-2(type="checkbox" name="industry")
+                            label(for="industry-2") Финансы
+                        .filter__item-inner
+                            input#industry-3(type="checkbox" name="industry")
+                            label(for="industry-3") Банковское дело
+                        .filter__item-inner
+                            input#industry-4(type="checkbox" name="industry")
+                            label(for="industry-4") Нафтедобыча
+                        a.filter__item-link(href="#") Смотреть все
+
+                .filter__footer
+                    p Показано 10 из 150
+                    button(type="reset") Отменить
+
+
+        .p-result__body
+            h1 Результаты поиска по запросу
+            .p-result__news-item
+                .item-news
+                    .item-news__header
+                        .item-news__title Операционная версия Windows 10
+                        .item-news__category Категория: <span>Решение</span>
+                    .item-news__body
+                        img.item-news__img(src="./assets/img/news-item-1.jpg" alt="")
+                        .item-news__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    .item-news__footer
+                        .item-news__tags
+                            p Теги:
+                            span.m--text-green Microsoft
+                            span.m--text-red Госсектор
+                            span.m--text-red Телеком
+                        .item-news__tags
+                            p Ответственный:
+                            span.m--text-orange Константин Константинов
+
+            .p-result__news-item
+                .item-news
+                    .item-news__header
+                        .item-news__title Внедрение Windows 10 на государственных предприятиях
+                        .item-news__category Категория: <span>Решение</span>
+                    .item-news__body
+                        img.item-news__img(src="./assets/img/news-item-2.jpg" alt="")
+                        .item-news__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    .item-news__footer
+                        .item-news__tags
+                            p Теги:
+                            span.m--text-green Microsoft
+                            span.m--text-red Госсектор
+                            span.m--text-red Телеком
+                        .item-news__tags
+                            p Ответственный:
+                            span.m--text-orange Константин Константинов
+
+            .p-result__news-item                
+                .item-news.item-news--author
+                    .item-news__header
+                        .item-news__title Николай Петрович Иванов
+                        .item-news__category Категория: <span>Ответственные</span>
+                    .item-news__body
+                        img.item-news__img(src="./assets/img/empty-author.png" alt="")
+                        .item-news__text
+                            p Ответственный за обучение Windows 10 в УЦ Softline
+                            p Главный специалист по Windows 10, MCP, MCT, MOS
+                            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    .item-news__footer
+                        .item-news__tags
+                            p Теги:
+                            span.m--text-green Microsoft
+                            span.m--text-red Госсектор
+                            span.m--text-red Телеком
