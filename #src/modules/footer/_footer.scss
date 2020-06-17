@@ -2,9 +2,21 @@
     padding: 40px;
     background-color: #333333;
 
+    @include md(padding-bottom, 25px);
+
     &__body {
         display: flex;
         justify-content: space-between;
+
+        @include md-block() {
+            flex-direction: column-reverse;
+            text-align: center;
+
+            p {
+                margin-bottom: 15px;
+
+            }
+        }
 
         p {
             font-weight: 600;
