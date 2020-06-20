@@ -12,11 +12,7 @@
 
 .content {
     flex: 1 1 auto;
-    padding: 87px 0;
-
-    @include md-block() {
-        padding: 50px 0;
-    }
+    padding-bottom: 87px;
 
     &__row {
         @include row-flex();
@@ -40,6 +36,13 @@
     &__body {
         @include col();
         @include size(12);
+    }
+
+    &--main-page {
+        padding-top: 87px;
+        @include md-block() {
+            padding: 50px 0;
+        }
     }
 }
 
